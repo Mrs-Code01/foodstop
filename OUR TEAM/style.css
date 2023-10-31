@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@1,800&family=Permanent+Marker&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(22, 22, 22);
+} 
+
+.logo-wrapper{
+    width: 200px;
+}
+.logo-wrapper img{
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.navigation .logo-wrapper{
+    display: none;
+}
+
+.hamburger{
+    display: none;
+    height: fit-content;
+    padding: 3px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .3s ease-in;
+    z-index: 999;
+}
+.hamburger:hover{
+    background-color: #fff;
+}
+
+.hamburger div{
+    width: 30px;
+    height: 2px;
+    margin: 6px 0;
+    background-color: #fff;
+    transition: all .3s ease-in;
+}
+.hamburger:hover div{
+    background-color: #000;
+}
+
+.navigation ul{
+    list-style: none;
+    display: flex;
+}
+
+.navigation ul li:not(:last-child){
+    padding-right: 25px;
+}
+.navigation a{
+    color: #dfdfdf;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: all .3s ease-in;
+}
+.navigation a:hover{
+    color: #f7ff60;
+}
+/***********THIS IS THE END OF THE NAV***********/
+/***********THIS IS THE END OF THE NAV***********/
+/***********THIS IS THE END OF THE NAV***********/
+main{
+    width: 70%;
+    margin: 70px auto 70px;
+}
+main h2{
+    color: #fff;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.main-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.team{
+    width: 33%;
+    text-align: center;
+    color: rgb(233, 233, 233);
+}
+.team img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.team h4{
+    padding: 8px 0;
+    font-size: 1.8rem;
+}
+.team p{
+    font-size: 1.4rem;
+}
+.margin{
+    margin-bottom: 50px;
+}
+/************THIS IS THE END OF THE MAIN***************/
+/************THIS IS THE END OF THE MAIN***************/
+/************THIS IS THE END OF THE MAIN***************/
+footer{
+    background-color: #000;
+    height: 300px;
+    min-height: 300px;
+}
+.footer-width{
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-baby{
+    width: 30%;
+}
+.footer-baby ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-baby ul li{
+    width: 49%;
+    margin-bottom: 10px;
+}
+
+.footer-baby ul li a{
+    text-decoration: none;
+    color: rgb(223, 223, 223);
+    transition: all .3s ease-in;
+    opacity: 1;
+    font-size: 1.4rem;
+}
+.footer-baby ul li a:hover{
+    opacity: .5;
+}
+
+
+.footer-baby ul .new a{
+    margin-bottom: 0px;
+}
+.footer-baby ul .user a{
+    margin-bottom: 0px;
+}
+.footer-baby h4{
+    margin-bottom: 30px;
+    font-size: 1.9rem;
+    color: #fff;
+}
+
+.contact-flex{
+    display: flex;
+    align-items: flex-start;
+}
+.contact-flex:not(:last-child){
+    margin-bottom: 17px;
+}
+.contact-flex p{
+    margin-left: 20px;
+    font-size: 1.4rem;
+    color: #fff;
+}
+.first img{
+    margin-bottom: 10px;
+}
+.first p{
+    color: rgb(223, 223, 223);
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+
+.subfooter p{
+    background-color: #fff;
+    padding: 16px 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+
+@media screen and (max-width:1150px){
+    .header{
+        width: 90%;
+    }
+
+    #nav_check:checked ~ .navigation{
+        left: 0;
+    }
+    .navigation{
+        position: absolute;
+        left: -400px;
+        top: 0;
+        z-index: 999;
+        width: 330px;
+        height: 45vh;
+        background-color: rgb(23, 22, 22);
+        transition: all .3s ease-in;
+    }
+    .navigation ul{
+        display: block;
+        margin-left: 22%;
+        margin-top: 10px;
+    }
+    .navigation ul li{
+        margin-bottom: 15px;
+    }
+    .navigation .logo-wrapper{
+        display: block;
+        padding-top: 15px;
+        margin-left: 22%;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width:769px){
+
+    .team{
+        width: 50%;
+    }
+
+    .main-flex{
+        flex-wrap: wrap;
+    }
+
+    footer{
+        min-height: 700px;
+    }
+
+    .footer-baby{
+        width: 47%;
+    }
+
+    .footer-flex{
+        flex-wrap: wrap;
+    }
+
+    .footer-baby:last-child{
+        margin-top: 40px;
+    }
+
+    .footer-baby a{
+        font-size: 1.7rem;
+    }
+
+    .contact-flex p{
+        font-size: 1.9rem;
+    }
+
+    .first p{
+        font-size: 1.7rem;
+    }
+
+    .first img{
+        width: 180px;
+    }
+
+    .footer-baby h4{
+        font-size: 2.1rem;
+    }
+    
+    .footer-baby ul li{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width:640px){
+    .navigation .logo-wrapper{
+        margin-left: 12%;
+    }
+    .navigation ul{
+        margin-left: 12%;
+    }
+}
+
+
+@media screen and (max-width:625px){
+    footer{
+        min-height: 800px;
+    }
+
+    .footer-width{
+        width: 85%;
+    }
+
+    main{
+        width: 85%;
+    }
+}
+
+
+
+
+@media screen and (max-width:502px){
+    main{
+        width: 100%;
+    }
+
+    .footer-width{
+        width: 90%;
+    }
+    footer{
+        padding: 0 20px;
+    }
+    .footer-baby{
+        width: 100%;
+    }
+
+    .footer-baby:last-child{
+        margin-bottom: 60px;
+    }
+    footer .first{
+        margin-bottom: 60px;
+    }
+}
+
+
+@media screen and (max-width:430px){
+    footer{
+        min-height: 900px;
+    }
+}
+
+
+@media screen and (max-width:400px){
+    .team{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:356px){
+  
+    .navigation .logo-wrapper{
+        margin-left: 8%;
+    }
+    .navigation ul{
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width:320px){
+.logo-wrapper{
+    width: 140px;
+}
+.navigation .logo-wrapper{
+    width: 140px;
+}
+.navigation ul li a{
+    font-size: 1.5rem;
+}
+.hamburger div{
+    width: 20px;
+    margin: 4px 0;
+}
+}
+
+
